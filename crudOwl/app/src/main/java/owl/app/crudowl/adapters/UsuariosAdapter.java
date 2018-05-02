@@ -66,14 +66,14 @@ public class UsuariosAdapter extends RecyclerView.Adapter<UsuariosAdapter.ViewHo
             passwordTextView.setText(usuarios.getPassword());
             emailTextView.setText(usuarios.getEmail());
 
-            itemView.setOnClickListener(new View.OnClickListener() {
+            itemView.findViewById(R.id.cardViewUsuarios).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     listener.onItemClick(usuarios, getAdapterPosition());
                 }
             });
 
-            itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            itemView.findViewById(R.id.cardViewUsuarios).setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
                     listenerLong.onLongItemClick(usuarios, getAdapterPosition());

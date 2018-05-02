@@ -2,7 +2,7 @@ package owl.app.crudowl.api;
 
 public class Api {
 
-    private static final String ROOT_URL = "http://192.168.1.68/json/Api.php?apicall=";
+    private static final String ROOT_URL = "http://192.168.1.77/json/Api.php?apicall=";
 
     public static final String URL_CREATE_USUARIOS = ROOT_URL + "createusuario";
     public static final String URL_READ_USUARIOS = ROOT_URL + "readusuarios";
